@@ -12,7 +12,7 @@ reverse("id"); // "di"
 reverse(""); // ""
 ***********************************************************************/
 
-
+//! Solution #1
 function reverse(str) {
   if (str.length <= 1) return str
   else {
@@ -20,6 +20,12 @@ function reverse(str) {
   }
 }
 
+//! Solution #2
+// function reverse(str) {
+//   if (str.length === 0) return str
+//   const retStr = reverse(str.slice(1))
+//   return retStr + str[0]
+// }
 console.log(reverse("house")); // "esuoh"
 reverse("dog"); // "god"
 reverse("atom"); // "mota"
